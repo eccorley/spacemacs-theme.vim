@@ -21,6 +21,7 @@
 " 0D | func                  | pink
 " 0E | keyword               | blue
 " 0F | act2                  | dark purple
+" bc6ec5
 " ---|-----------------------|--------------
 let s:gui00 = "292b2e"
 let s:gui01 = "212026"
@@ -31,7 +32,7 @@ let s:gui05 = "b2b2b2"
 let s:gui06 = "827591"
 let s:gui07 = "373040"
 let s:gui08 = "7590db"
-let s:gui09 = "a45bad"
+let s:gui09 = "bc6ec5"
 let s:gui0A = "2aa1ae"
 let s:gui0B = "2d9574"
 let s:gui0C = "ce537a"
@@ -205,10 +206,10 @@ call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
 call <sid>hi("Delimiter",    s:gui0F, "", s:cterm0F, "", "", "")
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "", "")
-call <sid>hi("Function",     s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("Function",     s:gui0E, "", s:cterm0D, "", "", "")
 call <sid>hi("Identifier",   s:gui08, "", s:cterm08, "", "none", "")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("Keyword",      s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Label",        s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Number",       s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Operator",     s:gui05, "", s:cterm05, "", "none", "")
@@ -267,13 +268,23 @@ call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("htmlItalic",  s:gui0E, "", s:cterm0E, "", "", "")
-call <sid>hi("htmlEndTag",  s:gui05, "", s:cterm05, "", "", "")
-call <sid>hi("htmlTag",     s:gui05, "", s:cterm05, "", "", "")
+call <sid>hi("htmlEndTag",  s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("htmlTag",     s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("xmlTag",      s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("xmlTagName",  s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("xmlEndTag",   s:gui0D, "", s:cterm0D, "", "", "")
 
 " JavaScript highlighting
 call <sid>hi("javaScript",        s:gui05, "", s:cterm05, "", "", "")
 call <sid>hi("javaScriptBraces",  s:gui05, "", s:cterm05, "", "", "")
 call <sid>hi("javaScriptNumber",  s:gui09, "", s:cterm09, "", "", "")
+call <sid>hi("jsClassDefinition", s:gui0A, "", s:cterm0A, "", "", "")
+call <sid>hi("jsSuper",           s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("jsGlobalObjects",   s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("jsArrowFunction",   s:gui05, "", s:cterm05, "", "", "")
+call <sid>hi("jsClassProperty",   s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("jsClassFuncName",   s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("jsReturn",          s:gui0E, "", s:cterm0E, "", "", "")
 
 " Mail highlighting
 call <sid>hi("mailQuoted1",  s:gui0A, "", s:cterm0A, "", "", "")
